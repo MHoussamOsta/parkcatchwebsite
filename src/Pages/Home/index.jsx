@@ -45,12 +45,12 @@ const Home = () => {
     if(userData.role == 2){
 
       response = await axios.post(
-        "https://16.170.35.122/api/allReservations",
+        "https://parkcatch.ddns.net/api/allReservations",
         data
       );
     } else {
       response = await axios.post(
-        "https://16.170.35.122/api/adminAllReservations",
+        "https://parkcatch.ddns.net/api/adminAllReservations",
         data
       );
     }
