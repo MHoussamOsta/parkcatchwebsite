@@ -39,7 +39,7 @@ const Modal = ({
         };
 
         const response = await axios.post(
-          "https://16.170.35.122/api/terminate",
+          "https://parkcatch.ddns.net/api/terminate",
           data
         );
         dispatch(clearSlots());
@@ -62,10 +62,10 @@ const Modal = ({
           token: userToken,
         };
 
-        let apiUrl = "https://16.170.35.122/api/addAvail";
+        let apiUrl = "https://parkcatch.ddns.net/api/addAvail";
 
         if (userData.role == 1) {
-          apiUrl = "https://16.170.35.122/api/adminAddAvail";
+          apiUrl = "https://parkcatch.ddns.net/api/adminAddAvail";
         }
 
         const response = await axios.post(apiUrl, data);
@@ -89,10 +89,10 @@ const Modal = ({
           token: userToken,
         };
 
-        let apiUrl = "https://16.170.35.122/api/removeAvail";
+        let apiUrl = "https://parkcatch.ddns.net/api/removeAvail";
 
         if (userData.role == 1) {
-          apiUrl = "https://16.170.35.122/api/adminRemoveAvail";
+          apiUrl = "https://parkcatch.ddns.net/api/adminRemoveAvail";
         }
 
         const response = await axios.post(apiUrl, data);
@@ -117,7 +117,7 @@ const Modal = ({
         };
 
         const response = await axios.post(
-          "https://16.170.35.122/api/parkingDetails",
+          "https://parkcatch.ddns.net/api/parkingDetails",
           data
         );
         setInputValues([]);
@@ -142,7 +142,7 @@ const Modal = ({
         };
 
         const response = await axios.post(
-          "https://16.170.35.122/api/addSupervisor",
+          "https://parkcatch.ddns.net/api/addSupervisor",
           data
         );
         setInputValues([]);
@@ -163,7 +163,7 @@ const Modal = ({
         };
 
         const response = await axios.post(
-          "https://16.170.35.122/api/removeSupervisor",
+          "https://parkcatch.ddns.net/api/removeSupervisor",
           data
         );
         setInputValues([]);
@@ -185,7 +185,7 @@ const Modal = ({
         };
 
         const response = await axios.post(
-          "https://16.170.35.122/api/ban",
+          "https://parkcatch.ddns.net/api/ban",
           data
         );
         setInputValues([]);
