@@ -24,7 +24,7 @@ const Slots = () => {
         token: userData.token,
       };
       const response = await axios.post(
-        "https://16.170.35.122/api/spots",
+        "https://parkcatch.ddns.net/api/spots",
         dataForm
       );
 
