@@ -35,7 +35,7 @@ const LoginForm = () => {
           email: inputValues['Email'],
           password: inputValues['Password'],
         }
-        const response = await axios.post("https://16.170.35.122/api/login", dataForm);
+        const response = await axios.post("https://parkcatch.ddns.net/api/login", dataForm);
     
         const userData = response.data.data;
         const userToken = response.data.data.token;
